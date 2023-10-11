@@ -1,16 +1,16 @@
 function getFormvalue() {
     //Write your code here
 
-	var form = document.getElementById("form1")
+	var form = document.getElementById("form1");
 
-	var firstName = form.elements["firstName"].value;
-  var lastName = form.elements["lastName"].value;
+	var firstName = document.getElementById("firstname");
+	var lastName = document.getElementById("lastname");
 	
-	alert("First Name: " + firstName + "\nLast Name: " + lastName);
+	alert(firstName.value + " " + lastName.value);
 
 }
 
-document.getElementById("form1").addEventListener("submit", function (e) {
-  e.preventDefault(); // Prevent the form from submitting
-  getFormValue(); // Call the getFormValue function
-});
+//document.getElementById("form1").addEventListener("submit", function (e) {
+  //e.preventDefault(); // Prevent the form from submitting
+  //getFormValue(); // Call the getFormValue function
+//});
